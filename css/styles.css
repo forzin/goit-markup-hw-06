@@ -1,6 +1,6 @@
 body 
 {
-    font-family:"Roboto", "Raleway", sans-serif;
+    font-family: 'Roboto', 'Raleway', sans-serif;
     color: #434455;
     background-color: #FFFFFF
 }
@@ -15,9 +15,9 @@ ul, li
     list-style-type: none;
 }
 
-.menu-link {
+.link {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -57,7 +57,7 @@ ul, li
 }
 
 .button {
-    background-color: #4d5ae5;
+    background-color: #404BBF;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -68,7 +68,7 @@ ul, li
 }
 
 .button:hover {
-    background-color: #404BBF;
+    background-color: #4d5ae5;
     font-size: 16px; 
 }
 
@@ -102,6 +102,12 @@ ul, li
     background-color: #2e2f42;
 }
 
+.big-text { 
+    font-size: 56px; 
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+
 .title-benefits {
     color: #2e2f42;
     font-weight: 500;
@@ -119,7 +125,7 @@ ul, li
 }
 
 .team {
-    background-color: #f4f4fd;
+    background-color: #FFFFFF;
 }
 
 .team-list {
@@ -130,6 +136,7 @@ ul, li
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    background-color: #FFFFFF;
 }
 
 .menu-team {
@@ -142,6 +149,7 @@ ul, li
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    color: #2e2f42;
 }
 
 .team-profession {
@@ -166,6 +174,7 @@ ul, li
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
 .text-portfolio {
