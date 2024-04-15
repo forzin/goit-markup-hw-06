@@ -22,8 +22,7 @@ ul, li
     letter-spacing: 0.02em;
 }
 
-.menu-links .menu-decoration:hover
-{
+.menu-links .menu-decoration:hover{
     color: #404BBF;
     text-decoration: underline;
 }
