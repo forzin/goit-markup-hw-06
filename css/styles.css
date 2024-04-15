@@ -1,8 +1,8 @@
 body 
 {
-    font-family: "Roboto", "Raleway", sans-serif;
-    color: #2E2F42;
-    background-color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
 }
 
 a 
@@ -15,29 +15,18 @@ ul, li
     list-style-type: none;
 }
 
-.menu-decoration 
-{font-weight: 500;
-    font-size: 15px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-.menu-links .menu-decoration:hover{
-    color: #404BBF;
-    text-decoration: underline;
-}
-
 .menu-link 
 {
     font-weight: 500;
     font-size: 15px;
     line-height: 1.5;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
 }
 
-.menu-links .menu-link:hover 
+.menu-links .menu-link:hover, .menu-links .menu-link:active 
 {
-    color: #404BBF;
+    color: #404bbf;
+    text-decoration: underline;
 }
 
 .mailto 
@@ -51,7 +40,7 @@ ul, li
 
 .menu-address .mailto:focus, .menu-address .mailto:hover
 {
-    color:#404BBF;
+    color:#404bbf;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -61,44 +50,39 @@ ul, li
 
 .tel 
 {
-    color: #434455
+    color: #434455;
 }
 
 .menu-address .tel:focus, .menu-address .tel:hover 
 {
-    color: #404BBF;
+    color: #404bbf;
 }
 
 .button 
 {
     background-color: #4d5ae5;
-    border-radius: 4px;
-    width: 169px;
-    height: 56px;
-    border-color: #4d5ae5;
     border-width: 0px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .button:hover 
 {
-    background-color: #404bbf;
-    border-radius: 4px;
-    width: 169px;
-    height: 56px;
-    border-color: #404bbf;
-    color: #fff;
+    background-color: #404BBF;
     font-size: 16px; 
 }
 
-.logo-blue 
+.logo
 {
     color:  #4d5ae5;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -108,22 +92,20 @@ ul, li
     color:  #2e2f42;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.big-text 
+.section-button
 {
     color: #fff;
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     background-color: #2e2f42;
-    width: 1440px;
-    height: 600px;
 }
 
 .title-benefits 
@@ -141,6 +123,7 @@ ul, li
     letter-spacing: 0.02em;
     font-size: 16px;
     text-align: left;
+    color: #434455;
 }
 
 .team 
@@ -153,6 +136,15 @@ ul, li
     color: #2e2f42;
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.menu-team 
+{
+    background-color: #FFFFFF;
 }
 
 .name-team 
@@ -178,8 +170,9 @@ ul, li
     font-weight: 700;
     font-size: 36px;
     text-align: center;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 .name-portfolio 
@@ -202,28 +195,29 @@ ul, li
 {
    
     background-color: #2e2f42;
-    width: 1440px;
-    height: 312px;
+
 }
 
-.logo-blue 
+.logo-footer 
 {
-    color:  #4d5ae5;
+    color: #4d5ae5;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
 }
 
 .logo-white
 {
-    color:  #f4f4fd;
+    color: #f4f4fd;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
 }
 
 .text-footer 
