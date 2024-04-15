@@ -1,7 +1,8 @@
 body 
 {
-    font-family: "Roboto", "Raleway", sans-serif;
+    font-family:"Roboto", "Raleway", sans-serif;
     color: #434455;
+    background-color: #FFFFFF
 }
 
 a 
@@ -21,7 +22,7 @@ ul, li
     letter-spacing: 0.02em;
 }
 
-.menu-links .menu-link:hover, .menu-links .menu-link:active {
+.menu-item:hover, .menu-item:active {
     color: #404bbf;
     text-decoration: underline;
 }
