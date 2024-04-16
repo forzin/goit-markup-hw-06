@@ -1,6 +1,6 @@
 body 
 {
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #FFFFFF
 }
@@ -15,6 +15,7 @@ ul, li
     list-style-type: none;
 }
 
+/*-------------Navigation-----------*/
 .link {
     font-weight: 500;
     font-size: 16px;
@@ -23,18 +24,18 @@ ul, li
     color: #2e2f42;
 }
 
-.link:hover, .link:active {
+.link:hover, .link:active, .link:focus {
     color: #404bbf;
     text-decoration: underline;
 }
 
+/*-------------Address-----------*/
 .menu-address {
     font-style: normal;
 }
 
 .mailto {
     color: #434455;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -42,7 +43,6 @@ ul, li
 
 .menu-address .mailto:focus, .menu-address .mailto:hover{
     color:#404bbf;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -51,12 +51,19 @@ ul, li
 
 .tel {
     color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .menu-address .tel:focus, .menu-address .tel:hover {
     color: #404bbf;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
+/*-------------Button-----------*/
 .button {
     background-color: #4D5AE5;
     color: #fff;
@@ -68,11 +75,22 @@ ul, li
     letter-spacing: 0.04em;
 }
 
-.button:hover {
+.button:hover, .button:focus {
     background-color: #404BBF;
     font-size: 16px; 
 }
 
+.section-button{
+    color: #fff;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    background-color: #2e2f42;
+}
+
+/*-------------Logotype-----------*/
 .logo{
     color: #4d5ae5;
     font-size: 18px;
@@ -93,22 +111,15 @@ ul, li
     font-family: "Raleway", sans-serif;
 }
 
-.section-button{
-    color: #fff;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    background-color: #2e2f42;
-}
 
+/*-------------H1-----------*/
 .big-text { 
     font-size: 56px; 
     line-height: 1.07;
     letter-spacing: 0.02em;
 }
 
+/*-------------Our Benefits-----------*/
 .title-benefits {
     color: #2e2f42;
     font-weight: 500;
@@ -125,6 +136,7 @@ ul, li
     color: #434455;
 }
 
+/*-------------Our Team-----------*/
 .team {
     background-color: #F4F4FD;
 }
@@ -161,6 +173,7 @@ ul, li
     text-align: center;
 }
 
+/*-------------Our Portfolio-----------*/
 .portfolio-list {
     font-weight: 700;
     font-size: 36px;
@@ -186,6 +199,7 @@ ul, li
     font-size: 16px;
 }
 
+/*-------------Footer-----------*/
 .footer {
    
     background-color: #2e2f42;
