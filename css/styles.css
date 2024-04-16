@@ -34,34 +34,20 @@ ul, li
     font-style: normal;
 }
 
-.mailto {
+.menu-address .link {
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.menu-address .mailto:focus, .menu-address .mailto:hover{
+.menu-address .link:focus, .menu-address .link:hover{
     color:#404bbf;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-
-.tel {
-    color: #434455;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-.menu-address .tel:focus, .menu-address .tel:hover {
-    color: #404bbf;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
 
 /*-------------Button-----------*/
 .button {
