@@ -10,9 +10,26 @@ a
     text-decoration: none;
 }
 
-ul, li 
-{
+ul, ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*-------------Navigation-----------*/
@@ -29,9 +46,26 @@ ul, li
     text-decoration: underline;
 }
 
+.page-nav {
+    display: flex;
+}
+
+.menu-links {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation-container {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 /*-------------Address-----------*/
 .menu-address {
     font-style: normal;
+    margin-left: auto;
+    
 }
 
 .menu-address .link {
@@ -39,6 +73,11 @@ ul, li
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
 }
 
 .menu-address .link:focus, .menu-address .link:hover{
@@ -59,6 +98,10 @@ ul, li
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: none;
+    
 }
 
 .button:hover, .button:focus {
@@ -74,6 +117,16 @@ ul, li
     letter-spacing: 0.02em;
     text-align: center;
     background-color: #2e2f42;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    padding-left: 327px;
+    padding-right: 327px;
 }
 
 /*-------------Logotype-----------*/
@@ -85,6 +138,7 @@ ul, li
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
+    padding-right: 75px;
 }
 
 .logo-black {
@@ -103,6 +157,7 @@ ul, li
     font-size: 56px; 
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
 }
 
 /*-------------Our Benefits-----------*/
@@ -120,6 +175,20 @@ ul, li
     font-size: 16px;
     text-align: left;
     color: #434455;
+}
+
+.menu-benefits {
+    display: flex;
+    column-gap: 24px;
+}
+
+.benefits-li {
+    width: calc((100% - 72px) / 4);
+}
+
+.benefits-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /*-------------Our Team-----------*/
