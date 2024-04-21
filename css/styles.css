@@ -22,14 +22,22 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
 }
 
-
+.img {
+    display: block;
+    max-width: 100%;
+}
 
 .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section-paddings {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /*-------------Navigation-----------*/
@@ -101,6 +109,8 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 4px;
     padding: 16px 32px;
     border: none;
+    display: block;
+    margin: 0 auto;
     
 }
 
@@ -125,8 +135,6 @@ h1, h2, h3, h4, h5, h6, p {
 .button-container {
     padding-top: 188px;
     padding-bottom: 188px;
-    padding-left: 327px;
-    padding-right: 327px;
 }
 
 /*-------------Logotype-----------*/
@@ -158,6 +166,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.07;
     letter-spacing: 0.02em;
     margin-bottom: 48px;
+    
 }
 
 /*-------------Our Benefits-----------*/
@@ -186,14 +195,15 @@ h1, h2, h3, h4, h5, h6, p {
     width: calc((100% - 72px) / 4);
 }
 
-.benefits-container {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+
 
 /*-------------Our Team-----------*/
 .team {
     background-color: #F4F4FD;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 
 .team-list {
@@ -205,10 +215,18 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     background-color: #F4F4FD;
+    margin-bottom: 70px;
 }
 
 .li-team {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px; 
 }
 
 .name-team {
@@ -218,6 +236,8 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding-top: 32px;
+   
 }
 
 .team-profession {
@@ -226,7 +246,16 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-bottom: 32px;
 }
+
+.menu-team {
+    display: flex;
+    column-gap: 24px;
+   
+}
+
+
 
 /*-------------Our Portfolio-----------*/
 .portfolio-list {
@@ -239,12 +268,22 @@ h1, h2, h3, h4, h5, h6, p {
     color: #2e2f42;
 }
 
+.portfolio-list {
+    margin-bottom: 70px;
+    
+}
+
 .name-portfolio {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 4px;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 
 .text-portfolio {
@@ -252,12 +291,45 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-size: 16px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+    padding-top: 4px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+}
+
+.menu-portfolio {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    
+}
+
+.li-portfolio {
+    width: calc((100% - 48px) / 3);
+    
+    
+}
+
+.img-portfolio {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.second-li-portfolio {
+    margin-bottom: 48px;
 }
 
 /*-------------Footer-----------*/
 .footer {
    
     background-color: #2e2f42;
+    padding-top: 100px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -269,6 +341,7 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
+    
 }
 
 .logo-white{
@@ -279,6 +352,7 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
+    
 }
 
 .text-footer {
@@ -286,4 +360,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 16px;
+    padding-bottom: 100px;
 }
