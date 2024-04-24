@@ -19,14 +19,13 @@ a
 
 ul, ol {
     list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    
 }
 
 .img {
@@ -101,6 +100,7 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
+    font-weight: 400;
 }
 
 .menu-address .link:focus, .menu-address .link:hover{
@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
 }
 
 
@@ -252,11 +253,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px; 
     border-radius: 0 0 4px 4px;
 }
 
@@ -310,7 +306,6 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 4px;
     margin-bottom: 8px
 }
 
@@ -319,7 +314,6 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-size: 16px;
-    padding-top: 4px;
 }
 
 .menu-portfolio {
@@ -388,6 +382,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-top: 16px;
+    
 
 }
