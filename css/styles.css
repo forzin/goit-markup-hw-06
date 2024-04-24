@@ -28,8 +28,9 @@ h1, h2, h3, h4, h5, h6, p {
     
 }
 
-.img {
+img {
     display: block;
+    max-width: 100%;
 }
 
 .container {
@@ -75,7 +76,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .navigation-container {
     display: flex;
-    
 }
 
 
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6, p {
 .img-portfolio {
     max-width: 100%;
     object-fit: cover;
-    display: block;
+    
 }
 
 .app-container {
