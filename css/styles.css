@@ -455,7 +455,7 @@ img {
     overflow: hidden;
 }
 
-.text-hover {
+.overlay-hover {
    
     position: absolute;
     top: 0;
@@ -473,7 +473,7 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover-container:hover .text-hover {
+.li-portfolio:hover .overlay-hover {
     transform: translateY(0%);
 }
 
