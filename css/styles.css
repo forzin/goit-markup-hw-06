@@ -43,17 +43,13 @@ img {
 }
 
 .section-paddings {
+    font-weight: 500;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
 /*-------------Navigation-----------*/
 .link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
     padding-top: 24px;
     padding-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,6 +63,20 @@ img {
 .page-nav {
     display: flex;
     align-items: center;
+}
+
+.link-nav:hover, .link-nav:active, .link-nav:focus {
+    color: #404bbf;
+    text-decoration: underline;
+}
+
+.link-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-links {
