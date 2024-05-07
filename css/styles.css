@@ -491,7 +491,7 @@ img {
     align-items: center;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .modal-overlay.is-open {
@@ -573,11 +573,13 @@ img {
     margin-bottom: 0;
     padding-left: 38px;
     outline: transparent;
+    background-color: transparent;
 }
 
 .input-container {
-    margin-bottom: 16px;
+    
     position: relative;
+    margin-bottom: 8px;
 }
 
 .text-input-user:focus {
@@ -588,15 +590,17 @@ img {
 
 .icon-position-input {
     position: relative;
+    
 }
 
 .svg-user-icon {
     position: absolute;
     top: 50%;
-    left: 18px;
+    left: 16px;
     transform: translateY(-50%);
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .text-input-user:focus + .svg-user-icon {
@@ -669,7 +673,7 @@ img {
 }
 
 .svg-exit:hover, .svg-exit:focus {
-    fill: #ffffff
+    fill: #ffffff;
 }
 
 .button-send {
@@ -798,7 +802,7 @@ img {
     color: #fff;
     padding-left: 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    margin-right: 24px;
+    
 }
 
 .input-email:focus {
@@ -823,22 +827,24 @@ img {
 }
 
 .button-footer {
+    display:flex;
     font-weight: 500;
     font-size: 16px;
-    display: flex;
     line-height: 1.5;
     letter-spacing: 0.04em;
     flex-direction: row;
     gap: 16px;
     border-radius: 4px;
-    padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border: none;
     background-color: #4d5ae5;
     color: #fff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    
 }
 
 .button-footer:hover {
@@ -846,20 +852,13 @@ img {
 }
 
 
-.svg-footer {
-    position: absolute;
-    top: 50%;
-    left: 117px;
-    transform: translateY(-50%);
-}
 
 .input-form {
     display: flex;
+    gap: 24px;
 }
 
-.form-input-container {
-    margin-right: 24px;
-}
+
 
 
 
