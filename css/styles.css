@@ -79,7 +79,8 @@ Header
 
 .logo {
     display: block;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: #4d5ae5;
     font-size: 18px;
     font-weight: 700;
@@ -103,7 +104,7 @@ Header
 
 .page-nav-mobile {
     margin-right: auto;
-    margin-bottom: 168px;
+    margin-bottom: auto;
 }
 
 .page-nav {
@@ -160,11 +161,19 @@ Header
     position: relative;
     padding-top: 72px;
     padding-bottom: 40px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
 
 .mobile-menu {
     opacity: 0;
     pointer-events: none;
+    position: fixed;
+}
+
+.list-icon-footer {
+    height: 40px;
 }
 
 .mobile-menu.is-open {
@@ -195,9 +204,10 @@ Header
     fill: #ffffff;
 }
 
+
 .menu-address-mobile {
     font-style: normal;
-    margin-left: auto;
+    
     margin-bottom: 48px;
 }
 
@@ -228,9 +238,11 @@ Header
     fill: #f4f4fd;
 }
 
-.footer-list-icon {
+.footer-list-icon-mobile {
     display: flex;
     gap: 40px;
+    max-width: 280px;
+    height: 40px;
 }
 
 .icon-link-footer {
@@ -242,13 +254,16 @@ Header
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 0;
 }
 
 .icon-link-footer:hover, .icon-link-footer:focus {
     background-color: #31d0aa;
 }
 
-
+.second-container-footer {
+    max-height: 80px;
+}
 
 @media screen and (min-width: 768px) {
     .page-header {
@@ -272,8 +287,7 @@ Header
     }
 
     .link {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
@@ -606,6 +620,12 @@ Benefits
 }
 
 @media screen and (min-width: 1158px) {
+    
+    .benefits-container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
     .title-benefits {
         font-weight: 500;
         font-size: 20px;
@@ -672,14 +692,18 @@ Benefits
 Our team
 ======================================================================================================================================================== */
 
-.team {
+.team-container {
+    padding-left: 28px;
+    padding-right: 28px;
     background-color: #F4F4FD;
     
 }
 
-.team-container {
-    padding-left: 28px;
-    padding-right: 28px;
+.menu-team {
+    display: flex;
+    gap: 72px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team-list {
@@ -698,9 +722,7 @@ Our team
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
-    margin-bottom: 72px;
     max-width: 264px;
-    
 }
 
 .person-container {
@@ -764,8 +786,6 @@ Our team
     .li-team {
         width: calc((100% - 24px) / 2);
         max-width: 264px;
-        gap: 64px;
-        margin-bottom: 64px;
     }
 
     .menu-team {
@@ -775,33 +795,53 @@ Our team
         column-gap: 24px;
         max-width: 768px;
         height: 920px;
+        flex-direction: row;
+        
     }
     
+    .team-container {
+        max-width: 768px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
     
 
     .team {
-        max-width: 768px;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
 @media screen and (min-width: 1158px) {
+    
+    .team-container {
+        max-width: 1440px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+       
+    }
+    
     .li-team {
         width: calc((100% - 72px) / 4);
-        height: 428px;
+        height: 422px;
+        width: 264;
     }
 
     .team {
-        max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
-        height: 780px;
+    }
+    
+    .section-paddings {
+        padding: 0;
     }
 
     .menu-team {
-        max-width: 1158px;
-        height: 780px;
+        max-width: 1440px;
+        height: 431px;
+        display: flex;
     }
 
     .team-list {
@@ -914,6 +954,11 @@ Our portfolio
     .img-portfolio {
         height: 300px;
     }
+
+    .portfolio-container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 /* ========================================================================================================================================================
@@ -921,8 +966,6 @@ Footer
 ======================================================================================================================================================== */
 
 .footer {
-    background-color: #2e2f42;
-    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 96px;
@@ -932,10 +975,16 @@ Footer
 .footer-container {
     display: block;
     align-items: center;
+    background-color: #2e2f42;
 }
 
 .first-container-footer {
     margin-bottom: 72px;
+}
+
+.footer-label {
+    margin-bottom: 16px;
+    height: 40px;
 }
 
 .logo-footer {
@@ -994,7 +1043,6 @@ Footer
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 72px;
 }
 
 .icon-link-footer:hover, .icon-link-footer:focus {
@@ -1017,8 +1065,9 @@ Footer
 }
 
 .input-form {
-    display: block;
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 .input-email {
@@ -1085,11 +1134,19 @@ Footer
     
 }
 
+.second-container-footer {
+    margin-bottom: 72px;
+}
+
 @media screen and (min-width: 768px) {
     .footer {
         background-color: #2e2f42;
-        max-width: 768px;
-        height: 456px;
+        
+    }
+
+    .input-form {
+        flex-direction: row;
+        gap: 24px;
     }
 
     .footer-container {
@@ -1137,8 +1194,6 @@ Footer
 @media screen and (min-width: 1158px) {
     .footer {
         background-color: #2e2f42;
-        max-width: 1440px;
-        height: 312px;
         padding-top: 100px;
         padding-bottom: 100px;
         
